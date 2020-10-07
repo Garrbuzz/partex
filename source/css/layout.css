@@ -1,0 +1,37 @@
+.grid-col-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-ai-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.jc-start {
+    justify-content: flex-start;
+}
+
+.jc-sa {
+    justify-content: space-around;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-end {
+    align-items: flex-end;
+}

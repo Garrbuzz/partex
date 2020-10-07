@@ -1,0 +1,89 @@
+@import "layout.scss";
+@import "../css/materialize.scss";
+$backCol-1: #35a;
+$menuColor: #fff;
+$menuColHover: #777;
+$menuBackground:rgba(30, 70, 120, 0.9);
+$menuBackgroundHover:rgba(50, 90, 150, 0.7);
+
+
+$font-1: montserrat;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $font-1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    height: 10vh;
+    background: $backCol-1;
+}
+
+//logo
+.logo {
+    grid-column: 2/5;
+}
+
+//logo end
+//menu
+.menu-container {
+    grid-column: 5/12;
+
+    nav {
+
+        height: 100%;
+
+        ul {
+            list-style-type: none;
+            height: 100%;
+
+            li {
+                height: 100%;
+                background: $menuBackground;
+                padding: 0 1em;
+                transition: background-color 0.3s ease-out;
+
+                a {
+                    text-decoration: none;
+                    color: $menuColor;
+                    transition: color 0.3s ease-out;
+                }
+
+                a:hover {
+                    color: $menuColHover;
+                }
+
+                .a-active:hover {
+                    color: $menuColor;
+                }
+            }
+
+            li:hover,
+            .li-current {
+                background-color: $menuBackgroundHover;
+            }
+
+
+
+        }
+    }
+}
+
+//menu end
+
+//slider
+.slider-cover {
+    width: 600px;
+    background: black;
+}
+
+//slider end

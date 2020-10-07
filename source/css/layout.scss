@@ -1,0 +1,51 @@
+.grid-col-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    display: flex;
+    flex-direcrion: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direcrion: column;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-ai-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.jc-start {
+    justify-content: flex-start;
+}
+
+.jc-end {
+    justify-content: flex-end;
+}
+
+.jc-sa {
+    justify-content: space-around;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.ai-end {
+    align-items: flex-end;
+}
