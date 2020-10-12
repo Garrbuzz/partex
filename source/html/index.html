@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" property="stylesheet" href="../fonts/segoe/stylesheet.css">
     <link rel="stylesheet" property="stylesheet" href="../fonts/montserrat/stylesheet.css">
+    <link rel="stylesheet" property="stylesheet" href="../fonts/swiss721/stylesheet.css">
     <!-- <link rel="stylesheet" href="../css/materialize.min.css"> -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Головна</title>
@@ -13,26 +14,225 @@
 
 <body>
     <header class="grid-col-12">
-        <div class="logo flex-row jc-start ai-center">
-            <img src="../img/gb-1.png" alt="">
+        <div class="header-wrapper flex-row jc-start ai-center">
+            <div class="logo flex-row jc-start ai-center">
+                <a><img src="../img/logo.png" alt=""></a>
+            </div>
+            <div class="header-content">
+                <h2>Автосвітло та електрика</h2>
+                <h3>Світлове обладнання та електрика для всього, шо їздить</h3>
+            </div>
         </div>
-        <div class="menu-container flex-row jc-end ai-center">
-            <nav class="flex-row ai-center">
-                <ul class="flex-row  ai-center">
-                    <li class="flex-row  ai-center  li-current "><a class="a-active">Головна</a></li>
-                    <li class="flex-row  ai-center"><a href="">Меню</a></li>
-                    <li class="flex-row  ai-center"><a href="slider.html">Слайдер</a></li>
-                    <li class="flex-row  ai-center"><a href="">Паралакс</a></li>
-                    <li class="flex-row  ai-center"><a href="">Форми</a></li>
-                </ul>
-            </nav>
+        <div class="menu-wrapper flex-row jc-start ">
+            <div class="menu-container">
+                <nav class="flex-row ai-center">
+                    <ul class="flex-row  ai-center">
+                        <li class="li-current "><a class="a-active">Головна</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="#">Про&nbspкомпанію</a></li>
+                        <li><a href="">Контакти</a></li>
+                        <li><a href="">B2B</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-<section class="grid-col-12">
-</section>
-    <footer>
+    <section class="grid-col-12">
+        <div class="slider-cover">
+            <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="../img/slider/car-1.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="../img/slider/car-2.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="../img/slider/car-3.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="../img/slider/car-4.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="../img/slider/car-5.jpg"></a>
+            </div>
+            <div class="arrows  flex-row jc-sb">
+                <img id="left-arrow" src="../img/arrow-left.png" alt="">
+                <img id="right-arrow" src="../img/arrow-right.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="grid-col-12">
+        <div class="news flex-column">
+            <h3>Останні новини</h3>
+            <div class="news-row flex-row">
+                <div class="news-date flex-column jc-center">
+                    <p class="news-day">01</p>
+                    <p class="news-month">вер</p>
+                </div>
+                <div class="news-text">
+                    <h4>Заголовок новини</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit...</p>
+                </div>
+            </div>
+            <div class="news-row flex-row">
+                <div class="news-date flex-column jc-center">
+                    <p class="news-day">01</p>
+                    <p class="news-month">вер</p>
+                </div>
+                <div class="news-text">
+                    <h4>Заголовок новини</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit...</p>
+                </div>
+            </div>
+            <div class="news-row flex-row">
+                <div class="news-date flex-column jc-center">
+                    <p class="news-day">01</p>
+                    <p class="news-month">вер</p>
+                </div>
+                <div class="news-text">
+                    <h4>Заголовок новини</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit...</p>
+                </div>
+            </div>
+        </div>
+        <div class="sale flex-column">
+            <h3>Акції</h3>
+            <div class="sale-row flex-row">
+                <div class="sale-img flex-row">
+                    <img src="../img/lamp-1.png" alt="">
+                </div>
+                <div class="sale-title flex-column ai-start jc-center">
+                    <h4>H4 X-tremeVision G-force</h4>
+                    <p class="pn">12342XVGS2</p>
+                </div>
+            </div>
+            <div class="sale-row flex-row">
+                <div class="sale-img flex-row">
+                    <img src="../img/lamp-1.png" alt="">
+                </div>
+                <div class="sale-title flex-column ai-start jc-center">
+                    <h4>H4 X-tremeVision G-force</h4>
+                    <p class="pn">12342XVGS2</p>
+                </div>
+            </div>
+            <div class="sale-row flex-row">
+                <div class="sale-img flex-row">
+                    <img src="../img/lamp-1.png" alt="">
+                </div>
+                <div class="sale-title flex-column ai-start jc-center">
+                    <h4>H4 X-tremeVision G-force</h4>
+                    <p class="pn">12342XVGS2</p>
+                </div>
+            </div>
+            <div class="sale-row flex-row">
+                <div class="sale-img flex-row">
+                    <img src="../img/lamp-1.png" alt="">
+                </div>
+                <div class="sale-title flex-column ai-start jc-center">
+                    <h4>H4 X-tremeVision G-force</h4>
+                    <p class="pn">12342XVGS2</p>
+                </div>
+            </div>
+        </div>
+        <div class="contacts  flex-column">
+            <h3>Наші контакти</h3>
+            <div class="contacts-row">
+                <div class="contact-image">
+                    <div><img src="../img/phone-1.png" alt=""></div>
+                </div>
+                <div class="contact-text">
+                    <p>+38 (<span>044</span>) 206-27-92</p>
+                </div>
+            </div>
+            <div class="contacts-row">
+                <div class="contact-image">
+                    <div><img src="../img/phone-1.png" alt=""></div>
+                </div>
+                <div class="contact-text">
+                    <p>+38 (<span>067</span>) 443-05-16</p>
+                </div>
+            </div>
+            <div class="contacts-row">
+                <div class="contact-image">
+                    <div><img src="../img/phone-1.png" alt=""></div>
+                </div>
+                <div class="contact-text">
+                    <p>+38 (<span>095</span>) 271-29-80</p>
+                </div>
+            </div>
+            <div class="contacts-row">
+                <div class="contact-image">
+                    <div><img src="../img/fax.png" alt=""></div>
+                </div>
+                <div class="contact-text">
+                    <p>+38 (<span>044</span>) 206-27-91</p>
+                </div>
+            </div>
+            <div class="contacts-row">
+                <div class="contact-image">
+                    <div><img src="../img/email.png" alt=""></div>
+                </div>
+                <div class="contact-text">
+                    <p><span>office</span>@<span>partex.com.ua</span></p>
+                </div>
+            </div>
+            <div class="contacts-row">
+                <div class="contact-image">
+                    <div><img src="../img/adr.png" alt=""></div>
+                </div>
+                <div class="contact-text">
+                    <p>Україна, 04074, м. Київ, вул. Автозаводська, 24/2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="grid-col-12">
+        <div class="brands flex-column">
+            <div class="brands-line flex-row">
+                <div class="brand-line-1">
+                    <hr />
+                </div>
+                <p>Бренди</p>
+                <div class="brand-line-2">
+                    <hr />
+                </div>
+            </div>
+            <div class="flex-row jc-center">
+                <a href="#">
+                    <div class="brand-item flex-row jc-ai-center">
+                        <p>Philips</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="brand-item flex-row jc-ai-center">
+                        <p>Narva</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="brand-item flex-row jc-ai-center">
+                        <p>Hella</p>
+                    </div>
+                </a>
+            </div>
+            <div class="brands-line flex-row">
+                <div class="brand-line-2">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="grid-col-12">
+        <div class="footer flex-column ai-center">
+            <div class="logo-footer">
+                <img src="../img/logo-sm.png" alt="">
+            </div>
+            <nav class="flex-row ai-center">
+                <ul class="flex-row  ai-center">
+                    <li class="li-current "><a class="a-active">Головна</a></li>
+                    <li><a href="slider.html">Каталог</a></li>
+                    <li><a href="slider.html">Про&nbspкомпанію</a></li>
+                    <li><a href="">Контакти</a></li>
+                    <li><a href="">B2B</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <p>&copy;&nbsp;&nbsp;2002 р.&nbsp;&nbsp;ТОВ "Партекс"</p>
+            </div>
+        </div>
     </footer>
     <script src="../js/main.js"></script>
+    <script src="../js/materialize.min.js"></script>
 </body>
 
 </html>

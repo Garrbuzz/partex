@@ -1,13 +1,17 @@
 @import "layout.scss";
 @import "../css/materialize.scss";
 $backCol-1: #35a;
-$menuColor: #fff;
-$menuColHover: #777;
+$menuColor-1: #6b6b6b;
+$menuColor-2: #f2ac04;
+$menuColHover: #f2ac04;
+$font-color-1:#565656;
+$border-color-1:#ccc;
 $menuBackground:rgba(30, 70, 120, 0.9);
 $menuBackgroundHover:rgba(50, 90, 150, 0.7);
 
 
 $font-1: montserrat;
+$font-2: swiss;
 
 * {
     padding: 0;
@@ -18,28 +22,64 @@ body {
     font-family: $font-1;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+// img {
+//     max-width: 100%;
+//     height: auto;
+// }
 
-header {
-    height: 10vh;
-    background: $backCol-1;
+header {}
+
+.header-wrapper {
+    grid-column: 2/12;
+    margin: 2rem 0;
 }
 
 //logo
 .logo {
-    grid-column: 2/5;
+
+
+    h1 {
+
+        margin: 0 0 0 2rem;
+        font-weight: 500;
+    }
+
+    padding-right: 3rem;
+    border-right: 1px #ccc solid;
 }
 
 //logo end
+.header-content {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+
+    h2 {
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $menuColor-2;
+        margin-bottom: 0.5rem;
+    }
+
+    h3 {
+        color: $menuColor-1;
+        font-weight: 500;
+        text-transform: lowercase;
+    }
+
+}
+
 //menu
+.menu-wrapper {
+    grid-column: 2/12;
+    border-top: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+}
+
 .menu-container {
-    grid-column: 5/12;
-
     nav {
-
+        margin: 1.25rem 0;
         height: 100%;
 
         ul {
@@ -48,14 +88,15 @@ header {
 
             li {
                 height: 100%;
-                background: $menuBackground;
-                padding: 0 1em;
-                transition: background-color 0.3s ease-out;
+                padding: 0 4rem 0 0;
 
                 a {
                     text-decoration: none;
-                    color: $menuColor;
+                    text-transform: uppercase;
+                    color: $menuColor-1;
                     transition: color 0.3s ease-out;
+                    font-size: 1.25rem;
+
                 }
 
                 a:hover {
@@ -63,16 +104,13 @@ header {
                 }
 
                 .a-active:hover {
-                    color: $menuColor;
+                    color: $menuColor-1;
+                }
+
+                .a-active {
+                    color: $menuColor-2;
                 }
             }
-
-            li:hover,
-            .li-current {
-                background-color: $menuBackgroundHover;
-            }
-
-
 
         }
     }
@@ -80,10 +118,247 @@ header {
 
 //menu end
 
+//*******index********
 //slider
 .slider-cover {
+    grid-column: 3/11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+
+    // width: 250px;
+
+}
+
+.carousel {
     width: 600px;
-    background: black;
+}
+
+.arrows {
+    margin: 2rem 0;
+    width: 600px;
+
+    img {
+        margin: 0 3rem;
+    }
+
+    img:hover {
+        cursor: pointer;
+    }
 }
 
 //slider end
+//news
+.news {
+    grid-column: 2/5;
+    margin: 2rem 0;
+
+    h3 {
+        margin: 2rem 0;
+        color: $font-color-1;
+    }
+}
+
+
+.news-row {
+    border-bottom: 1px $border-color-1 dotted;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.news-date {
+    width: 6rem;
+    border-right: 1px $menuColor-2 solid;
+}
+
+.news-day {
+    color: $menuColor-2;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.news-month {
+    font-color: $font-color-1;
+    font-weight: 500;
+}
+
+.news-text {
+    h4 {
+        color: $menuColor-2;
+        font-weight: 500;
+        margin: 0 0 0.5rem 2rem;
+    }
+
+    p {
+        color: $menuColor-1;
+        margin: 0 0 0.5rem 2rem;
+    }
+}
+
+//news end
+//sale
+.sale {
+    grid-column: 5/9;
+    margin: 2rem 1rem 2rem 3rem;
+    padding: 0 1rem;
+
+    h3 {
+        color: $font-color-1;
+        margin: 2rem 0;
+    }
+}
+
+.sale-row {
+    border-bottom: 1px $border-color-1 dotted;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.sale-img {
+    width: 4rem;
+}
+
+.sale-title {
+    h4 {
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: $menuColor-2;
+    }
+}
+
+//sale end
+//index contacts
+.contacts {
+
+    grid-column: 9/12;
+    margin: 2rem 0 2rem 3rem;
+
+    h3 {
+        margin: 2rem 0;
+        color: $font-color-1;
+    }
+}
+
+.contacts-row {
+    display: flex;
+
+    margin-bottom: 1rem;
+}
+
+.contact-image {
+    min-width: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-item: start;
+
+}
+
+.contact-text {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+
+    p {
+        color: $menuColor-1;
+        font-weight: 500;
+
+        span {
+            color: $menuColor-2;
+        }
+    }
+
+
+}
+
+//index contacts end
+//index brands
+.brands {
+    grid-column: 2/12;
+    margin-bottom: 2em;
+
+    p {
+        margin: 0 1rem;
+    }
+}
+
+.brands-line {
+    width: 100%;
+
+    p {
+        color: $menuColor-2;
+
+        font-weight: 500;
+    }
+}
+
+.brand-line-1 {
+    width: 10rem;
+
+
+    hr {
+        color: $border-color-1;
+        background-color: $border-color-1;
+        border: 0px none;
+        height: 1px;
+        margin-top: 0.5em;
+    }
+}
+
+.brand-line-2 {
+
+    width: 100%;
+
+    hr {
+        color: $border-color-1;
+        background-color: $border-color-1;
+        border: 0px none;
+        height: 1px;
+        margin-top: 0.5em;
+
+    }
+}
+
+.brand-item {
+    height: 5rem;
+    width: 7rem;
+    margin: 1rem 3rem;
+    background: rgba(30, 50, 150, 0.7);
+
+    p {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+}
+
+.brand-item:hover {
+    cursor: pointer;
+}
+
+//index brands end
+//footer
+.footer {
+    grid-column: 2/12;
+
+    nav {
+        margin: 2rem 0;
+
+        ul {
+            li {
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+
+.copyright {
+    margin: 0 0 3rem 0;
+}
+
+//footer end
+
+
+//******Catelog******
+
+//******Catelog end******
