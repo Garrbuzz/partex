@@ -4699,8 +4699,10 @@ input[type=range]::-ms-thumb {
 body {
   font-family: montserrat; }
 
+.cont {
+  grid-column: 2/12; }
+
 .header-wrapper {
-  grid-column: 2/12;
   margin: 2rem 0; }
 
 .logo {
@@ -4730,7 +4732,6 @@ body {
     text-transform: lowercase; }
 
 .menu-wrapper {
-  grid-column: 2/12;
   border-top: 1px #ccc solid;
   border-bottom: 1px #ccc solid; }
 
@@ -4758,7 +4759,6 @@ body {
         color: #f2ac04; }
 
 .slider-cover {
-  grid-column: 3/11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4879,7 +4879,6 @@ body {
       color: #f2ac04; }
 
 .brands {
-  grid-column: 2/12;
   margin-bottom: 2em; }
   .brands p {
     margin: 0 1rem; }
@@ -4921,7 +4920,7 @@ body {
   cursor: pointer; }
 
 .footer {
-  grid-column: 2/12; }
+  margin-top: 5rem; }
   .footer nav {
     margin: 2rem 0; }
     .footer nav ul li {
@@ -4929,3 +4928,136 @@ body {
 
 .copyright {
   margin: 0 0 3rem 0; }
+
+.breadcrumbs ul {
+  margin: 1.5rem 0; }
+  .breadcrumbs ul li {
+    margin: 0 0.5rem;
+    font-weight: 500; }
+    .breadcrumbs ul li a {
+      -webkit-transition: color 0.3s linear;
+      transition: color 0.3s linear; }
+    .breadcrumbs ul li a:hover {
+      color: #f2ac04; }
+  .breadcrumbs ul span {
+    color: #ccc; }
+  .breadcrumbs ul .current {
+    color: #ccc; }
+
+.brands-catalog {
+  margin: 2rem 0; }
+
+.catalog-item {
+  width: 22vw;
+  height: 25vh;
+  background: rgba(30, 50, 150, 0.7);
+  margin: 2rem 1.5rem; }
+  .catalog-item p {
+    font-size: 3rem;
+    color: #fff; }
+
+.catalog-item:hover {
+  cursor: pointer; }
+
+.catalog-title {
+  margin: 2rem 0 0 0; }
+  .catalog-title h1 {
+    color: #f2ac04;
+    font-weight: 500; }
+
+.catalog-content {
+  width: 50vw;
+  color: #565656;
+  line-height: 1.5em; }
+
+.category {
+  width: 300px;
+  margin: 2rem 2rem; }
+  .category h2 {
+    color: #565656; }
+  .category ul {
+    margin: 2rem 0;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .category ul li {
+      margin-bottom: 0.75rem;
+      line-height: 1.35rem; }
+
+.category-list-header {
+  color: white;
+  padding: 0.5rem 1rem 0.5rem 1.5rem;
+  font-weight: 500; }
+
+.line-left,
+.line-right {
+  min-width: 400px;
+  width: 40vw;
+  padding: 0 1rem; }
+
+.line-title {
+  background: #f18700;
+  width: 100%;
+  margin: 3rem 0; }
+  .line-title h1 {
+    color: #fff;
+    margin: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 2.5rem; }
+
+.line-motto h2 {
+  color: #f18700;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin: 1rem 0; }
+
+.line-content ul {
+  list-style-type: disc;
+  margin: 0.5rem 1rem 1rem 0; }
+  .line-content ul li {
+    color: #6b6b6b;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin: 0.5rem 0; }
+
+p {
+  color: #6b6b6b;
+  line-height: 1.5rem; }
+  p span {
+    font-weight: 600; }
+
+.road-images {
+  margin: 2rem 0; }
+
+.road-img img {
+  margin: 1rem 1rem 0 1rem; }
+
+.road-img p {
+  font-size: 0.75rem; }
+
+.pack-variants-title {
+  margin: 1rem 3rem 0 0;
+  border-bottom: 1px #565656 dotted; }
+  .pack-variants-title p {
+    font-size: 0.75rem; }
+
+.pack-variants-images {
+  margin: 1rem 0; }
+  .pack-variants-images img {
+    margin: 0 1rem 3rem 1rem; }
+
+.big-pack div {
+  margin: -5rem 2rem 2rem 0; }
+
+.assort {
+  margin: 2rem 0;
+  border-bottom: 1px #565656 dotted; }
+  .assort p {
+    font-size: 0.75rem; }
+
+.var-lamp {
+  margin: 1rem; }
+  .var-lamp p {
+    color: #565656;
+    font-size: 0.8rem;
+    font-weight: 700; }

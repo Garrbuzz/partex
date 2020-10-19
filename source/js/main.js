@@ -14,9 +14,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var elems = document.querySelector('.carousel');
     var instances = M.Carousel.init(elems);
+
+    var elems1 = document.querySelectorAll('.collapsible');
+    var instances1 = M.Collapsible.init(elems1);
+
     let la = document.querySelector('#left-arrow');
     console.log(la);
     let ra = document.querySelector('#right-arrow');
-    la.addEventListener("click", () => { instances.prev() });
-    ra.addEventListener('click', () => { instances.next() });
+    if (la && ra) {
+        la.addEventListener("click", () => { instances.prev() });
+        ra.addEventListener('click', () => { instances.next() });
+    }
+
 });
