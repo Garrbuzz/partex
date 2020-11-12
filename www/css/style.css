@@ -4708,9 +4708,6 @@ body {
 .logo {
   padding-right: 3rem;
   border-right: 1px #ccc solid; }
-  .logo h1 {
-    margin: 0 0 0 2rem;
-    font-weight: 500; }
 
 .header-content {
   display: -webkit-box;
@@ -4719,8 +4716,7 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: 3rem; }
+  flex-direction: column; }
   .header-content h2 {
     font-weight: 300;
     text-transform: uppercase;
@@ -4730,6 +4726,9 @@ body {
     color: #6b6b6b;
     font-weight: 500;
     text-transform: lowercase; }
+
+.carrency table {
+  font-size: 0.8rem; }
 
 .menu-wrapper {
   border-top: 1px #ccc solid;
@@ -4758,6 +4757,10 @@ body {
       .menu-container nav ul li .a-active {
         color: #f2ac04; }
 
+.cart {
+  width: 100%;
+  margin-right: 2rem; }
+
 .slider-cover {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4783,9 +4786,13 @@ body {
     cursor: pointer; }
 
 .news {
-  grid-column: 2/5;
-  margin: 2rem 0; }
-  .news h3 {
+  grid-column: 4/10; }
+
+.news-index {
+  grid-column: 2/8;
+  margin: 2rem 0;
+  padding-right: 1.5rem; }
+  .news-index h3 {
     margin: 2rem 0;
     color: #565656; }
 
@@ -4795,7 +4802,7 @@ body {
   margin-bottom: 2rem; }
 
 .news-date {
-  width: 6rem;
+  min-width: 5rem;
   border-right: 1px #f2ac04 solid; }
 
 .news-day {
@@ -4807,6 +4814,9 @@ body {
   font-color: #565656;
   font-weight: 500; }
 
+.news-image {
+  margin: 0 0 0 1rem; }
+
 .news-text h4 {
   color: #f2ac04;
   font-weight: 500;
@@ -4816,9 +4826,27 @@ body {
   color: #6b6b6b;
   margin: 0 0 0.5rem 2rem; }
 
+.news-item {
+  grid-column: 4/10;
+  font-family: montserrat; }
+
+.news-title h1 {
+  color: #f2ac04;
+  font-weight: 500;
+  font-size: 1.5rem; }
+
+.news-content p {
+  margin: 0.5rem;
+  line-height: 1.5rem; }
+
+.news-content-img {
+  margin: 2rem 0; }
+
+.index-right {
+  grid-column: 8/12; }
+
 .sale {
-  grid-column: 5/9;
-  margin: 2rem 1rem 2rem 3rem;
+  margin: 2rem 1rem 2rem 5rem;
   padding: 0 1rem; }
   .sale h3 {
     color: #565656;
@@ -4838,8 +4866,8 @@ body {
   color: #f2ac04; }
 
 .contacts {
-  grid-column: 9/12;
-  margin: 2rem 0 2rem 3rem; }
+  margin: 2rem 0 2rem 5rem;
+  padding: 0 1rem; }
   .contacts h3 {
     margin: 2rem 0;
     color: #565656; }
@@ -4996,7 +5024,6 @@ body {
   padding: 0 1rem; }
 
 .line-title {
-  background: #f18700;
   width: 100%;
   margin: 3rem 0; }
   .line-title h1 {
@@ -5006,7 +5033,6 @@ body {
     font-size: 2.5rem; }
 
 .line-motto h2 {
-  color: #f18700;
   font-weight: 500;
   font-size: 2.5rem;
   margin: 1rem 0; }
@@ -5042,9 +5068,12 @@ p {
     font-size: 0.75rem; }
 
 .pack-variants-images {
-  margin: 1rem 0; }
+  margin: 1rem 0 2rem 0; }
   .pack-variants-images img {
-    margin: 0 1rem 3rem 1rem; }
+    margin: 1rem 1rem 1rem 1rem; }
+  .pack-variants-images p {
+    color: #565656;
+    font-weight: 600; }
 
 .big-pack div {
   margin: -5rem 2rem 2rem 0; }
@@ -5061,3 +5090,44 @@ p {
     color: #565656;
     font-size: 0.8rem;
     font-weight: 700; }
+
+.b2b-login {
+  grid-column: 5/9;
+  margin: 3rem; }
+  .b2b-login label {
+    margin: 2em 0;
+    font-size: 1.5rem; }
+  .b2b-login input {
+    font-size: 1.75rem;
+    color: #565656; }
+  .b2b-login .login-button input {
+    margin: 2rem 0;
+    padding: 0.3rem 1.5rem;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 3px;
+    -webkit-transition: -webkit-box-shadow 0.3s linear;
+    transition: -webkit-box-shadow 0.3s linear;
+    transition: box-shadow 0.3s linear;
+    transition: box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear; }
+  .b2b-login .login-button input:hover {
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    cursor: pointer; }
+
+.b2b-menu-wrapper {
+  grid-column: 2/12;
+  margin: 1rem 0; }
+
+.b2b-menu-item {
+  margin: 1rem 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background: rgba(30, 50, 150, 0.7); }
+  .b2b-menu-item p {
+    color: white;
+    font-size: 1.5rem;
+    -webkit-transition: color 0.3s linear;
+    transition: color 0.3s linear; }
+
+.b2b-menu-item:hover p {
+  color: yellow; }

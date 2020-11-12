@@ -8,7 +8,7 @@ $font-color-1:#565656;
 $border-color-1:#ccc;
 $menuBackground:rgba(30, 70, 120, 0.9);
 $menuBackgroundHover:rgba(50, 90, 150, 0.7);
-
+$catalogItemBackground:rgba(30, 50, 150, 0.7);
 $colorVision:#f18700;
 
 
@@ -44,11 +44,7 @@ header {}
 .logo {
 
 
-    h1 {
 
-        margin: 0 0 0 2rem;
-        font-weight: 500;
-    }
 
     padding-right: 3rem;
     border-right: 1px #ccc solid;
@@ -59,7 +55,7 @@ header {}
 
     display: flex;
     flex-direction: column;
-    margin-left: 3rem;
+    // margin-left: 3rem;
 
     h2 {
         font-weight: 300;
@@ -74,6 +70,12 @@ header {}
         text-transform: lowercase;
     }
 
+}
+
+.carrency {
+    table {
+        font-size: 0.8rem;
+    }
 }
 
 //menu
@@ -122,7 +124,13 @@ header {}
 }
 
 //menu end
+//cart
+.cart {
+    width: 100%;
+    margin-right: 2rem;
+}
 
+//cart end
 //*******index********
 //slider
 .slider-cover {
@@ -156,8 +164,14 @@ header {}
 //slider end
 //news
 .news {
-    grid-column: 2/5;
+    grid-column: 4/10;
+
+}
+
+.news-index {
+    grid-column: 2/8;
     margin: 2rem 0;
+    padding-right: 1.5rem;
 
     h3 {
         margin: 2rem 0;
@@ -173,7 +187,7 @@ header {}
 }
 
 .news-date {
-    width: 6rem;
+    min-width: 5rem;
     border-right: 1px $menuColor-2 solid;
 }
 
@@ -186,6 +200,10 @@ header {}
 .news-month {
     font-color: $font-color-1;
     font-weight: 500;
+}
+
+.news-image {
+    margin: 0 0 0 1rem;
 }
 
 .news-text {
@@ -201,11 +219,46 @@ header {}
     }
 }
 
+.news-item {
+    grid-column: 4/10;
+    font-family: $font-1;
+}
+
+
+
+.news-title {
+
+
+    h1 {
+        color: $menuColor-2;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+}
+
+.news-content {
+    p {
+        margin: 0.5rem;
+        line-height: 1.5rem;
+    }
+}
+
+.news-content-img {
+    margin: 2rem 0;
+}
+
 //news end
+//index-right
+.index-right {
+    grid-column: 8/12;
+}
+
+
+
 //sale
 .sale {
-    grid-column: 5/9;
-    margin: 2rem 1rem 2rem 3rem;
+
+    margin: 2rem 1rem 2rem 5rem;
     padding: 0 1rem;
 
     h3 {
@@ -235,9 +288,8 @@ header {}
 //sale end
 //index contacts
 .contacts {
-
-    grid-column: 9/12;
-    margin: 2rem 0 2rem 3rem;
+    margin: 2rem 0 2rem 5rem;
+    padding: 0 1rem;
 
     h3 {
         margin: 2rem 0;
@@ -278,6 +330,9 @@ header {}
 }
 
 //index contacts end
+//index-right end
+
+
 //index brands
 .brands {
     margin-bottom: 2em;
@@ -401,7 +456,7 @@ header {}
 .catalog-item {
     width: 22vw;
     height: 25vh;
-    background: rgba(30, 50, 150, 0.7);
+    background: $catalogItemBackground;
     margin: 2rem 1.5rem;
 
     p {
@@ -471,7 +526,7 @@ header {}
 
 
 .line-title {
-    background: $colorVision;
+    // background: $colorVision;
     width: 100%;
     margin: 3rem 0;
 
@@ -486,7 +541,7 @@ header {}
 
 .line-motto {
     h2 {
-        color: $colorVision;
+        // color: $colorVision;
         font-weight: 500;
         font-size: 2.5rem;
         margin: 1rem 0;
@@ -541,10 +596,15 @@ p {
 }
 
 .pack-variants-images {
-    margin: 1rem 0;
+    margin: 1rem 0 2rem 0;
 
     img {
-        margin: 0 1rem 3rem 1rem;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    p {
+        color: $font-color-1;
+        font-weight: 600;
     }
 }
 
@@ -579,3 +639,66 @@ p {
 //product-end
 
 //******Catalog end******
+//b2b
+.b2b-login {
+    grid-column: 5/9;
+    margin: 3rem;
+
+    label {
+        margin: 2em 0;
+        font-size: 1.5rem;
+    }
+
+    input {
+        font-size: 1.75rem;
+        color: $font-color-1;
+    }
+
+    .login-button {
+
+
+        input {
+            margin: 2rem 0;
+            padding: 0.3rem 1.5rem;
+            font-size: 1.25rem;
+            border: none;
+            border-radius: 3px;
+            transition: box-shadow 0.3s linear;
+        }
+
+        input:hover {
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+        }
+
+
+    }
+
+
+
+}
+
+.b2b-menu-wrapper {
+    grid-column: 2/12;
+    margin: 1rem 0;
+}
+
+.b2b-menu-item {
+    margin: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
+    background: $catalogItemBackground;
+
+    p {
+        color: white;
+        font-size: 1.5rem;
+        transition: color 0.3s linear;
+    }
+}
+
+.b2b-menu-item:hover {
+    p {
+        color: yellow;
+    }
+}
+
+//b2b end
