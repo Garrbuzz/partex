@@ -701,4 +701,102 @@ p {
     }
 }
 
+.b2b-selection-wrapper {
+    grid-column: 2/12;
+
+
+    ul {
+        border: none;
+        box-shadow: none;
+        width: 100%;
+    }
+
+
+    .philips {
+        color: white;
+        background: blue;
+    }
+
+    .narva {
+        color: white;
+        background: #029;
+    }
+
+    .hella {
+        color: blue;
+        background: $menuColor-2;
+    }
+
+}
+
+.hide-b2b-table-header {
+    display: none;
+}
+
+.b2b-selection-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.25rem 2rem;
+    width: 100%;
+    margin: 0.25rem;
+}
+
+.b2b-selection-brand:hover {
+    cursor: pointer;
+}
+
+.selection-table {
+    .name {
+        width: 25%;
+    }
+
+    .articul {
+        width: 25%;
+    }
+
+    .balance {
+        width: 15%;
+    }
+
+    .price {
+        width: 15%;
+    }
+
+    .to-cart {
+        width: 15%;
+    }
+}
+
 //b2b end
+
+
+//media
+@media only screen and (max-width : 1025px) {
+
+
+    .b2b-table-wrapper {
+        table {
+            display: flex;
+            flex-direction: row;
+
+            tr {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .b2b-table-header {
+                display: none;
+            }
+
+            // .mobile {
+            //     display: flex;
+            //     flex-direction: row;
+
+            // }
+        }
+    }
+
+    .hide-b2b-table-header {
+        display: flex;
+    }
+}

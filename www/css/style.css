@@ -5131,3 +5131,72 @@ p {
 
 .b2b-menu-item:hover p {
   color: yellow; }
+
+.b2b-selection-wrapper {
+  grid-column: 2/12; }
+  .b2b-selection-wrapper ul {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100%; }
+  .b2b-selection-wrapper .philips {
+    color: white;
+    background: blue; }
+  .b2b-selection-wrapper .narva {
+    color: white;
+    background: #029; }
+  .b2b-selection-wrapper .hella {
+    color: blue;
+    background: #f2ac04; }
+
+.hide-b2b-table-header {
+  display: none; }
+
+.b2b-selection-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.25rem 2rem;
+  width: 100%;
+  margin: 0.25rem; }
+
+.b2b-selection-brand:hover {
+  cursor: pointer; }
+
+.selection-table .name {
+  width: 25%; }
+
+.selection-table .articul {
+  width: 25%; }
+
+.selection-table .balance {
+  width: 15%; }
+
+.selection-table .price {
+  width: 15%; }
+
+.selection-table .to-cart {
+  width: 15%; }
+
+@media only screen and (max-width: 1025px) {
+  .b2b-table-wrapper table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .b2b-table-wrapper table tr {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .b2b-table-wrapper table .b2b-table-header {
+      display: none; }
+  .hide-b2b-table-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
