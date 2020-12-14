@@ -38,6 +38,10 @@
     justify-content: space-between;
 }
 
+.jc-end {
+    justify-content: flex-end;
+}
+
 .ai-start {
     align-items: flex-start;
 }
@@ -48,4 +52,8 @@
 
 .ai-center {
     align-items: center;
+}
+
+.ai-sb {
+    align-items: space-between;
 }

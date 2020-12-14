@@ -18,26 +18,59 @@
             <div class="logo flex-row jc-start ai-center">
                 <a href="index.html"><img src="../img/logo.png" alt=""></a>
             </div>
-            <div class="header-content">
-                <h2>Ваше замовлення:</h2>
-                <h3>Товарів:&nbsp0</h3>
-                <h3>На суму:&nbsp0 грн.</h3>
-            </div>
-            <div class="carrency flex-column">
-                <table>
-                    <tr>
-                        <td>UA/USD</td>
-                        <td>28.378</td>
-                    </tr>
-                    <tr>
-                        <td>UA/EUR</td>
-                        <td>31.256</td>
-                    </tr>
-                    <tr>
-                        <td>USD/EUR</td>
-                        <td>1.23</td>
-                    </tr>
+            <div class="currency flex-row jc-ai-center">
+                <div class="currency-column ai-start">
+                    <div class="cur-name">
+                        <p>UA<span class="color-main">/</span>USD</p>
+                    </div>
+                    <div class="cur-name">
+                        <p>UA<span class="color-main">/</span>EUR</p>
+                    </div>
+                    <div class="cur-name">
+                        <p>USD<span class="color-main">/</span>EUR</p>
+                    </div>
+                </div>
+                <div class="currency-column ai-start">
+                    <div class="cur-val">
+                        <p class="cur-val">28.378</p>
+                    </div>
+                    <div class="cur-val">
+                        <p class="cur-val">31.256</p>
+                    </div>
+                    <div class="cur-val">
+                        <p class="cur-val">1.3</p>
+                    </div>
+                </div>
                 </table>
+            </div>
+            <div class="header-cart flex-row jc-end ai-center">
+                <a href="order.html">
+                    <img src="../img/cart-header.png" alt="">
+                </a>
+                <a href="order.html">
+                    <div class="cart flex-row">
+                        <div class="cart-col cart-name">
+                            <p>Товарів:</p>
+                            <p>На суму:</p>
+                        </div>
+                        <div class="cart-col  cart-val">
+                            <p>12</p>
+                            <p>3240.00 грн.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="header-user-wrapper flex-row jc-end">
+            <div class="header-user flex-row ai-center">
+                <div class="user-title light-blue-text text-darken-4">Користувач:</div>
+                <div class="user-name color-main">Юзеренко Василь</div>
+                <a href="cabinet.html">
+                    <div class="b2b-exit light-blue-text text-darken-4">Особистий кабінет</div>
+                </a>
+                <a href="b2b-login.html">
+                    <div class="b2b-exit light-blue-text text-darken-4">Вихід</div>
+                </a>
             </div>
         </div>
         <div class="menu-wrapper  cont  flex-row jc-start ">
@@ -52,12 +85,9 @@
                     </ul>
                 </nav>
             </div>
-            <!-- <div class="cart flex-row jc-end ai-center">
-    <div><img src="../img/cart.png" alt=""></div>
-</div> -->
         </div>
     </header>
-    <section class="breadcrumbs flex-row jc-center">
+    <section class="breadcrumbs flex-column ai-center">
         <ul class=" flex-row">
             <li><a href="index.html">Головна</a></li>
             <span>/</span>
@@ -65,54 +95,229 @@
         </ul>
     </section>
     <section class="grid-col-12">
-        <div class="b2b-menu-wrapper flex-row jc-center wrap">
-            <a href="b2b-selection.html">
-                <div class="b2b-menu-item">
-                    <p>Підбір товару</p>
-                </div>
-            </a>
-            <a href="">
-                <div class="b2b-menu-item">
-                    <p>Пошук</p>
-                </div>
-            </a>
-            <a href="">
-                <div class="b2b-menu-item">
-                    <p>Особистий кабінет</p>
-                </div>
-            </a>
+        <div class="b2b-selection-wrapper flex-column ai-center">
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header b2b-selection-brand flex-row jc-center  blue darken-4  white-text">Philips</div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <div class="b2b-search-input flex-row">
+                                <input type="search" id="b2b-search" name="b2b-search" placeholder="Пошук">
+                                <div class="flex-row jc-center ai-center">
+                                    <button class="amber accent-4 waves-effect waves-light btn-small">Шукати</button>
+                                </div>
+                            </div>
+                            <li>
+                                <div class="selection-table-header flex-row">
+                                    <div class="name-header">Назва</div>
+                                    <div class="articul-header">Артікул</div>
+                                    <div class="balance-header">Залишок</div>
+                                    <div class="price-header">Ціна</div>
+                                    <div class="to-cart-header">Додати</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="selection-table">
+                                    <div class="name">
+                                        <div class="selection-table-header-hidden">
+                                            <p>Назва</p>
+                                        </div>
+                                        <div class="selection-cell-mobile">
+                                            <a href="b2b-item.html">Лампа LED Fest 10.5x38 2LED 12859 6000K12V 1W X1 12V 1W
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="articul">
+                                        <div class="selection-table-header-hidden">
+                                            <p>Артікул</p>
+                                        </div>
+                                        <div class="selection-cell-mobile">
+                                            128596000KX1
+                                        </div>
+                                    </div>
+                                    <div class="balance">
+                                        <div class="selection-table-header-hidden">
+                                            <p>Залишок</p>
+                                        </div>
+                                        <div class="selection-cell-mobile">
+                                            1025
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <div class="selection-table-header-hidden">
+                                            <p>Ціна</p>
+                                        </div>
+                                        <div class="selection-cell-mobile">
+                                            280.00 грн.
+                                        </div>
+                                    </div>
+                                    <div class="selection-table-header-hidden">
+                                        <p>Додати</p>
+                                    </div>
+                                    <div class="to-cart"><img src="../img/to-cart.png" alt=""></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="selection-table">
+                                    <div class="name">
+                                        <div class="selection-table-header-hidden">
+                                            <p>Назва</p>
+                                        </div>
+                                        <a href="goods.html">
+                                            <div class="selection-cell-mobile">
+                                                Лампа LED Fest 10.5x38 2LED 12859 6000K12V 1W X1 12V 1W
+                                            </div>
+                                    </div>
+                                    <div class="articul">
+                                        <div class="selection-table-header-hidden">
+                                            <p>Артікул</p>
+                                        </div>
+                                        <a href="goods.html">
+                                            <div class="selection-cell-mobile">
+                                                128596000KX1
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="balance">
+                                        <div class="selection-table-header-hidden">
+                                            <p>Залишок</p>
+                                        </div>
+                                        <div class="selection-cell-mobile">
+                                            1025
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <div class="selection-table-header-hidden">
+                                            <p>Ціна</p>
+                                        </div>
+                                        <div class="selection-cell-mobile">
+                                            280.00 грн.
+                                        </div>
+                                    </div>
+                                    <div class="selection-table-header-hidden">
+                                        <p>Додати</p>
+                                    </div>
+                                    <div class="to-cart"><a class="modal-trigger" href="#to-cart-modal"><img src="../img/to-cart.png" alt=""></a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="selection-table">
+                                    <div class="name">
+                                        <div class="selection-table-header-hidden">
+                                            <p>Назва</p>
+                                        </div>
+                                        <div class="selection-cell-mobile">
+                                            Лампа LED Fest 10.5x38 2LED 12859 6000K12V 1W X1 12V 1W
+                                        </div>
+                                    </div>
+                                    <div class="articul">
+                                        <div class="selection-table-header-hidden">
+                                            <p>Артікул</p>
+                                        </div>
+                                        <div class="selection-cell-mobile">
+                                            128596000KX1
+                                        </div>
+                                    </div>
+                                    <div class="balance">
+                                        <div class="selection-table-header-hidden">
+                                            <p>Залишок</p>
+                                        </div>
+                                        <div class="selection-cell-mobile">
+                                            1025
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <div class="selection-table-header-hidden">
+                                            <p>Ціна</p>
+                                        </div>
+                                        <div class="selection-cell-mobile">
+                                            280.00 грн.
+                                        </div>
+                                    </div>
+                                    <div class="to-cart" data-goods-id="32"><a class="modal-trigger" href="#to-cart-modal"><img src="../img/to-cart.png" alt=""></a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header b2b-selection-brand philips flex-row jc-center blue darken-3">Narva</div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="line.html">Лампа 1</a></li>
+                            <li><a href="line.html">Лампа 1</a></li>
+                            <li><a href="line.html">Лампа 1</a></li>
+                            <li><a href="line.html">Лампа 1</a></li>
+                            <li><a href="line.html">Лампа 1</a></li>
+                            <li><a href="line.html">Лампа 1</a></li>
+                            <li><a href="line.html">Лампа 1</a></li>
+                            <li><a href="line.html">Лампа 1</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header b2b-selection-brand philips flex-row jc-center blue darken-3">Hella</div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="line.html">Лампа 1</a></li>
+                            <li><a href="line.html">Лампа 1</a></li>
+                            <li><a href="line.html">Лампа 1</a></li>
+                            <li><a href="line.html">Лампа 1</a></li>
+                            <li><a href="line.html">Лампа 1</a></li>
+                            <li><a href="line.html">Лампа 1</a></li>
+                            <li><a href="line.html">Лампа 1</a></li>
+                            <li><a href="line.html">Лампа 1</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
-    <section class="grid-col-12">
-        <div class="b2b-table-wrapper">
-            <!-- <table>
-    <tr class="b2b-table-header">
-        <th>Назва</th>
-        <th>Артікул</th>
-        <th>Посилання на опис</th>
-        <th>залишок</th>
-        <th>ціна</th>
-        <th>До заказу</th>
-    </tr>
-    <tr class="hide-b2b-table-header">
-        <th>Назва</th>
-        <th>Артікул</th>
-        <th>Посилання на опис</th>
-        <th>залишок</th>
-        <th>ціна</th>
-        <th>До заказу</th>
-    </tr>
-    <tr>
-        <td>Лампа</td>
-        <td>l0251355s</td>
-        <td>Philips</td>
-        <td>256</td>
-        <td>25,00</td>
-        <td>*</td>
-    </tr>
-</table> -->
+    <div id="to-cart-modal" class="modal grid-col-12">
+        <div class="modal-content to-cart-modal-content">
+            <div class="modal-header flex-row jc-center">
+                <h4 class="blue-grey-text text-darken-3">Додаємо до замовлення:</h4>
+            </div>
+            <div class="modal-row">
+                <div class="modal-header-item">
+                    <h5>Назва:</h5>
+                </div>
+                <div class="modal-item-value">
+                    <p class="amber-text text-accent-4">Лампа LED Fest 10.5x38 2LED 12859 6000K12V 1W X1 12V 1W</p>
+                </div>
+            </div>
+            <div class="modal-row">
+                <div class="modal-header-item">
+                    <h5>Артікул:</h5>
+                </div>
+                <div class="modal-item-value">
+                    <p class="amber-text text-accent-4">128596000KX1</p>
+                </div>
+            </div>
+            <div class="modal-row">
+                <div class="modal-header-item">
+                    <h5>Ціна:</h5>
+                </div>
+                <div class="modal-item-value">
+                    <p class="amber-text text-accent-4">280,00 грн.</p>
+                </div>
+            </div>
+            <div class="modal-row">
+                <div class="modal-header-item">
+                    <h5>Кількість:</h5>
+                </div>
+                <div class="modal-item-value">
+                    <div class="to-cart-modal-num flex-row ai-center">
+                        <div>-</div>
+                        <input type="text" class="shk-count order-goods-count" type="text" name="count[]" title="изменить количество" value="1">
+                        <div>+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row jc-center"><a href="order.html"><button class="waves-effect waves-light btn blue-grey darken-4 white-text">Додати</button></a></div>
         </div>
-    </section>
+    </div>
+    <script src="[[++project]]/js/search.js"></script>
     <footer class="grid-col-12">
         <div class="footer  cont flex-column ai-center">
             <div class="logo-footer">
@@ -132,8 +337,8 @@
             </div>
         </div>
     </footer>
-    <script src="../js/main.js"></script>
     <script src="../js/materialize.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
