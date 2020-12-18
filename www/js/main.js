@@ -39,9 +39,13 @@ let numPlus = function() {
     value++;
     goodsCount.value = value;
     numGoods.value = value;
+}
+let getСustomerInfoModal = function(e) {
+    let target = event.target;
+    if (target.className == 'orders-history-row') {
+        orderId = target.dataset.id;
 
-    // console.log(numGoods.value);
-
+    }
 }
 let getInfoForModal = function(e) {
 
@@ -88,6 +92,7 @@ let getInfoForModal = function(e) {
 
 document.addEventListener('DOMContentLoaded', function() {
     let selectionsWrapper = document.querySelector('.b2b-selection-wrapper');
+    let customerInfoWrapper = document.querySelector('.customer-info-wrapper');
     if (selectionsWrapper) {
         selectionsWrapper.addEventListener('click', getInfoForModal);
         let elemsModal = document.querySelectorAll('.modal');
@@ -96,6 +101,11 @@ document.addEventListener('DOMContentLoaded', function() {
         addButton.addEventListener('click', () => {
             instances[0].close()
         });
+    }
+    if (customerInfoWrapper) {
+        customerInfoWrapper.addEventListener('click', getСustomerInfoModal);
+        let elemsModal = document.querySelectorAll('.modal');
+        let instances = M.Modal.init(elemsModal);
     }
 
     let sendOrderButton = document.querySelector('#send');

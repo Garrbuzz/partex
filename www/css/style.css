@@ -5799,6 +5799,9 @@ p {
 .orders-history-row:hover {
   background: #fff; }
 
+#view-order-modal {
+  width: 90%; }
+
 .contacts-wrapper {
   grid-column: 4/11; }
 
